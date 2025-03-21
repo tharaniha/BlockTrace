@@ -1,2 +1,2 @@
 # BlockTrace
-A Blockchain based Chain of Custody Management in Cyber Forensics
+A Blockchain based Chain of Custody Management System in Cyber Forensics
