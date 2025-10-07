@@ -1,0 +1,204 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Modern font similar to the reference */
+  background-color: #051124; /* Dark blue background */
+  color: #CCD6F6; /* Light gray text for better readability */
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #91c4b9; /* Teal for headings */
+  font-weight: 600; /* Bold headings */
+}
+
+a {
+  color: #91c4b9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #52D1C7; /* Slightly darker teal on hover */
+  text-decoration: underline;
+}
+
+button {
+  background-color: #0f9175;/* Teal for buttons */
+  color: #0A192F; /* Dark blue text */
+  border: none;
+  padding: 12px 24px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #52D1C7; /* Slightly darker teal on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button:disabled {
+  background-color: #4A5568; /* Gray for disabled buttons */
+  cursor: not-allowed;
+}
+
+input, select {
+  
+  padding: 12px;
+  margin: 5px;
+  border: 1px solid #91c4b9;
+  border-radius: 5px;
+  background-color: #112240; /* Darker blue for input fields */
+  color: #CCD6F6;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+input::placeholder {
+  color: #8892B0; /* Light gray for placeholder text */
+}
+
+input:focus {
+  border-color: #52D1C7; /* Highlight input on focus */
+  outline: none;
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Login Page */
+.Login {
+  max-width: 40%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #112240; /* Darker blue for login box */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Login:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.Login input {
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+/* User Management */
+.UserManagement {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #112240; /* Darker blue for user management box */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.UserManagement:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.UserManagement h2 {
+  margin-top: 0;
+  color: #91c4b9;
+}
+
+.UserManagement label {
+  display: block;
+  margin: 10px 0;
+  color: #CCD6F6;
+}
+
+/* Evidence Management */
+.EvidenceManagement {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #112240; /* Darker blue for evidence management box */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.EvidenceManagement:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.EvidenceManagement input {
+  width: 85%;
+  margin-bottom: 15px;
+}
+
+/* Access Logging */
+.AccessLogging {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #112240; /* Darker blue for access logging box */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.AccessLogging:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.AccessLogging input {
+  width: 85%;   
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Reporting */
+.Reporting {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #112240; /* Darker blue for reporting box */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Reporting:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.Reporting ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Reporting li {
+  background-color: #0A192F; /* Dark blue for list items */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Reporting li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

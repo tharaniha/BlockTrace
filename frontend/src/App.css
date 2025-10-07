@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+  padding: 40px;
+}
+
+.App h1 {
+  color: #64FFDA; /* Teal for the main heading */
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.App button {
+  background-color: #64FFDA; /* Teal for buttons */
+  color: #0A192F; /* Dark blue text */
+  border: none;
+  padding: 12px 24px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.App button:hover {
+  background-color: #52D1C7; /* Slightly darker teal on hover */
+  transform: translateY(-2px);
+}
+
+.App button:disabled {
+  background-color: #4A5568; /* Gray for disabled buttons */
+  cursor: not-allowed;
+}
+
+.App input {
+  padding: 12px;
+  margin: 10px;
+  border: 1px solid #64FFDA;
+  border-radius: 5px;
+  background-color: #112240; /* Darker blue for input fields */
+  color: #CCD6F6;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.App input::placeholder {
+  color: #8892B0; /* Light gray for placeholder text */
+}
+
+.App input:focus {
+  border-color: #52D1C7; /* Highlight input on focus */
+  outline: none;
+}
+
+/* Logout Button */
+.logout-button {
+  background-color: #FF6B6B; /* Red for logout button */
+  color: #FFFFFF; /* White text */
+  border: none;
+  padding: 12px 24px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  float: right;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #FF5252; /* Slightly darker red on hover */
+  transform: translateY(-2px);
+}
